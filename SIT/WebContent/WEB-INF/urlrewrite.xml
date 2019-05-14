@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlrewrite>
+	<rule>
+	<!-- /public/cat/index?cid=4 -->
+		<from>public/cat/index/(.*)-([0-9]+).html</from> <!-- http://localhost:8023/bsong/public/cat/dslfsdf-4.html -->
+		<to>public/cat/index?cid=$2</to>
+		<!-- <from>public/cat/(.*)1-([0-9]+)2.html3</from> --><!-- truyền vô 2 chổ id -->
+	</rule>
+	
+	<rule>
+		<!-- /public/detail/index?nid=46 -->
+		<from>public/detail/index/(.*)-([0-9]+).html</from>
+		<to>public/detail/index?nid=$2</to>
+	</rule>
+	
+	<rule>
+		<!-- /public/index?page=3 -->
+		<from>public/index/-([0-9]+).html</from>
+		<to>public/index?page=$1</to>
+	</rule>
+</urlrewrite>
